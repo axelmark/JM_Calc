@@ -2,9 +2,6 @@ package ru.calculator.task;
 
 import ru.calculator.task.typeNumber.ArabicNumber;
 import ru.calculator.task.typeNumber.RomeNumber;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.regex.Pattern;
 
 public abstract class NumericToken {
