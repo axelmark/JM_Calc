@@ -14,21 +14,17 @@ public abstract class OperatorToken {
         if (Pattern.matches("\\+", str)) {
             return new Plus();
         }
-        if (Pattern.matches("\\-", str)) {
+        if (Pattern.matches("-", str)) {
             return new Minus();
         }
         if (Pattern.matches("\\*", str)) {
             return new Multiply();
         }
-        if (Pattern.matches("\\/", str)) {
+        if (Pattern.matches("/", str)) {
             return new Divide();
         } else {
-            throw new Exception("Не подходящий оператор"); //Не должно сработать, а вдруг)
+            throw new Exception("Не подходящий оператор"); //A вдруг!)
         }
-    }
-
-    public NumericToken execute(NumericToken arg1, NumericToken arg2) {
-        return null;
     }
 
     protected abstract float execute(float arg1, float arg2);

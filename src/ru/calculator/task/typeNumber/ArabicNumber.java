@@ -4,12 +4,11 @@ import ru.calculator.task.NumericToken;
 
 public class ArabicNumber extends NumericToken {
     public ArabicNumber(String str) {
-        super(str);
+        setValue(Float.parseFloat(str));
     }
 
-
-//    @Override
-//    public String toString() {
-//        return Float.toString(getValue());
-//    }
+    @Override
+    public String toString() {
+        return Integer.toString((int)getValue());
+    }
 }
