@@ -1,7 +1,6 @@
 package ru.calculator.task.typeNumber;
 
 import ru.calculator.task.NumericToken;
-
 import java.security.InvalidParameterException;
 import java.util.ArrayList;
 
@@ -14,7 +13,6 @@ public class RomeNumber extends NumericToken {
     public String toString() {
         return toRome(getValue());
     }
-
 
     public static String correct(String rome) {
         return toRome(toFloat(rome));
