@@ -7,8 +7,12 @@ public class ArabicNumber extends NumericToken {
         setValue(Float.parseFloat(str));
     }
 
+    public ArabicNumber(float value) {
+        setValue(value);
+    }
+
     @Override
     public String toString() {
-        return Integer.toString((int)getValue());
+        return Integer.toString((int) getValue());
     }
 }
